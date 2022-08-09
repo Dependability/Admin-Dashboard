@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: skyblue;
+}
+
+body > .right{
+    flex: 1;
+}
+
+.rightsearch, .intro .left {
+    display: flex;
+}
+
+
+.searchDiv, .intro {
+    display: flex;
+    justify-content: space-between;
+}
