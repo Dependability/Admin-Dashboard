@@ -166,7 +166,9 @@ a, a:hover, a:focus, a:active {
     margin-left: 10px;
 }
 
-
+.sidebar .settings {
+    margin-top: 60px;
+}
 /* Main */
 
 main {
@@ -197,15 +199,71 @@ main {
     padding-top: 40px;
 }
 
+.card .text {
+    color: rgb(88, 88, 88);
+}
 
+
+
+/* Announcements and Trending*/
+.announcements {
+    color: rgb(88, 88, 88);
+}
+
+.announcements h2 {
+    margin-bottom: 10px;
+    color: black;
+}
 
 
 .announce-div {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    border-radius: 8px;
+    padding: 24px;
+    grid-template-rows: repeat(3, auto);
+    
 }
 
+.announce-items {
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.announce-items h3 {
+    font-size: 1.17rem;
+    color: black;
+}
+.announce-items:last-child {
+    border-bottom: none;
+}
+
+.trending {
+    margin-top: 50px;
+}
+.trending h2 {
+    margin-bottom: 10px;
+}
 .trend-div {
     display: grid;
-    grid-template-rows: repeat(4, 1fr)
+    border-radius: 8px;
+    padding: 24px;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 24px;
+    padding-left: 40px;
 }
+
+.trend-items {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: rgb(88, 88, 88);
+    
+}
+
+.trend-items .username{
+    color: black;
+    }
+
